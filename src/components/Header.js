@@ -16,11 +16,11 @@ const Navigation = () => {
             activeKey={activeKey} // Appliquer l'état actif aux liens
             onSelect={(selectedKey) => setActiveKey(selectedKey)} // Mettre à jour l'état lors du clic sur un lien
           >
-            <Nav.Link href="#home" eventKey="#home">home</Nav.Link>
-            <Nav.Link href="../pages/Service.js" eventKey="../pages/Service.js">services</Nav.Link>
-            <Nav.Link href="#portfolio" eventKey="#portfolio">portfolio</Nav.Link>
-            <Nav.Link href="#contact" eventKey="#contact">contact</Nav.Link>
-            <Nav.Link href="#mentions légales" eventKey="#mentions légales">mentions légales</Nav.Link>
+            <Nav.Link href="../pages/Home.js" eventKey="../pages/Home.js">home</Nav.Link>
+            <Nav.Link href="../pages/Services.js" eventKey="../pages/Services.js">services</Nav.Link>
+            <Nav.Link href="../pages/Portfolio.js" eventKey="../pages/Portfolio.js">portfolio</Nav.Link>
+            <Nav.Link href="../pages/Contact.js" eventKey="../pages/Contact.js">contact</Nav.Link>
+            <Nav.Link href="../pages/MentionsLégales.js" eventKey="../pages/MentionsLégales.jsÒ">mentions légales</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

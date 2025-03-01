@@ -1,0 +1,21 @@
+.footerlink:hover a{
+    font-weight: bold;
+  }
+  
+  .footerlink a{
+    text-decoration: none;
+  }
+  
+  .dev{
+    margin-bottom: 0;
+  }
+  
+  .icone{
+    margin-right: 3%;
+    transition: fill 0,3s ease;
+    color:gray;
+  }
+  
+  .icone:hover{
+    color: white;
+  }
