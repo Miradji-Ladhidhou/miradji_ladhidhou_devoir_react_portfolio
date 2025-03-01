@@ -11,10 +11,7 @@
     text-decoration: underline;
   }
   
-  /* Changez la couleur du lien actif */
   .nav-link.active {
-    color: #dc3545 !important;  /* Exemple de couleur orange pour le lien actif */
-    font-weight: bold;
     text-decoration: underline;
+    font-weight: bold; /* Facultatif : pour rendre le lien plus visible */
   }
-  

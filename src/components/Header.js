@@ -1,31 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
-  // Définir l'état du lien actif
-  const [activeKey, setActiveKey] = useState('#home');
-
-  return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">john doe</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-nav" />
-        <Navbar.Collapse id="navbar-nav">
-          <Nav
-            className="ms-auto"
-            activeKey={activeKey} // Appliquer l'état actif aux liens
-            onSelect={(selectedKey) => setActiveKey(selectedKey)} // Mettre à jour l'état lors du clic sur un lien
-          >
-            <Nav.Link href="../pages/Home.js" eventKey="../pages/Home.js">home</Nav.Link>
-            <Nav.Link href="../pages/Services.js" eventKey="../pages/Services.js">services</Nav.Link>
-            <Nav.Link href="../pages/Portfolio.js" eventKey="../pages/Portfolio.js">portfolio</Nav.Link>
-            <Nav.Link href="../pages/Contact.js" eventKey="../pages/Contact.js">contact</Nav.Link>
-            <Nav.Link href="../pages/MentionsLégales.js" eventKey="../pages/MentionsLégales.jsÒ">mentions légales</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-};
+const Navigation = () => (
+  <Navbar bg="dark" variant="dark" expand="lg">
+    <Container>
+      <Navbar.Brand as={NavLink} to="/">john doe</Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbar-nav" />
+      <Navbar.Collapse id="navbar-nav">
+        <Nav className="ms-auto">
+          <Nav.Link as={NavLink} to="/" activeClassName="active-link">home</Nav.Link>
+          <Nav.Link as={NavLink} to="/Services" activeClassName="active-link">services</Nav.Link>
+          <Nav.Link as={NavLink} to="/Portfolio" activeClassName="active-link">portfolio</Nav.Link>
+          <Nav.Link as={NavLink} to="/Contact" activeClassName="active-link">contact</Nav.Link>
+          <Nav.Link as={NavLink} to="/MentionsLégales" activeClassName="active-link">mentions légales</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+);
 
 export default Navigation;
