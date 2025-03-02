@@ -15,3 +15,8 @@
 .card-body{
     height: 410px;
 }
+
+.card-body:hover{
+    background-color: #efefef;
+    box-shadow: 0px 0px 5px #000;
+}
