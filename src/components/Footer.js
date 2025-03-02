@@ -59,8 +59,6 @@ function Footer() {
           </Col>
         </Row>
       </Container>
-      <div className="text-center py-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-      </div>
     </footer>
   );
 }
