@@ -1,0 +1,13 @@
+.accordion{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.mentions{
+    margin: 0 auto;
+    border-bottom: solid #0d6efd 3px;
+    max-width: 35%;
+    margin-bottom: 4%;
+}

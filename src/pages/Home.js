@@ -16,11 +16,7 @@ const Home = () => {
         </div>
         <AboutSkills/>
     </div>
-
-    
-
-    
-    
+ 
   );
 };
 

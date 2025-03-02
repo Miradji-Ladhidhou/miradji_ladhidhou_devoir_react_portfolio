@@ -13,7 +13,7 @@ const Navigation = () => (
           <Nav.Link as={NavLink} to="/Services" activeClassName="active-link">services</Nav.Link>
           <Nav.Link as={NavLink} to="/Portfolio" activeClassName="active-link">portfolio</Nav.Link>
           <Nav.Link as={NavLink} to="/Contact" activeClassName="active-link">contact</Nav.Link>
-          <Nav.Link as={NavLink} to="/MentionsLégales" activeClassName="active-link">mentions légales</Nav.Link>
+          <Nav.Link as={NavLink} to="/Mentions" activeClassName="active-link">mentions légales</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
