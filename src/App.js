@@ -4,6 +4,7 @@ import './css/header.css';
 import './css/footer.css';
 import './css/home.css';
 import './css/services.css';
+import './css/portfolio.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
