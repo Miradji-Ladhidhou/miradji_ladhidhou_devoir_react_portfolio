@@ -13,5 +13,5 @@
   
   .nav-link.active {
     text-decoration: underline;
-    font-weight: bold; /* Facultatif : pour rendre le lien plus visible */
+    font-weight: bold;
   }

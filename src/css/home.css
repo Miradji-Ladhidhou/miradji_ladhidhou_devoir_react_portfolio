@@ -1,0 +1,31 @@
+.div-john{
+    position: relative;
+}
+
+img{
+    width: 100%;
+    z-index: 2;
+}
+
+.john{
+    position:absolute;
+    z-index: 1;
+    color: #fff;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30%;
+}
+
+.borderBottom{
+    border-bottom: solid #0d6efd 3px;
+    padding: 2%;
+    margin-bottom: 7%;
+}
+
+.AboutAndSkills{
+    text-align: left;
+    border: solid 2px red;
+    padding: 2%;
+    margin: 5% 10%;
+    box-shadow: red 5px 5px 5px;
+}

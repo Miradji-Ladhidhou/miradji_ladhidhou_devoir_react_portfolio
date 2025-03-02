@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './css/header.css';
 import './css/footer.css';
+import './css/home.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';

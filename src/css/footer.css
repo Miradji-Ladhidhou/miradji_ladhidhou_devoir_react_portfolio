@@ -13,9 +13,17 @@
   .icone{
     margin-right: 3%;
     transition: fill 0,3s ease;
-    color:gray;
+    color:#adb5bd;
   }
   
   .icone:hover{
-    color: white;
+    color: #fff;
+  }
+
+  li, .dev, h5{
+    text-align: left;
+  }
+
+  .div-icone{
+    text-align: left;
   }
