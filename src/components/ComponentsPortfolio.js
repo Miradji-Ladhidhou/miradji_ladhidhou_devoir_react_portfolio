@@ -10,13 +10,13 @@ const Cards = ({ title, text, icon, footerText }) => {
         </div>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{text}</Card.Text>
-        <div className= "BtnPortfolio"><Button variant="primary">Voir le site</Button></div>
-
+        <div>
+          <Button className="btn-hover" variant="primary">Voir le site</Button>
+        </div>
         <Card.Footer className="cardsFooter">
-        {footerText}
+          {footerText}
         </Card.Footer>
       </Card.Body>
-      
     </Card>
   );
 };

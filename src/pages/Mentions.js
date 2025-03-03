@@ -1,9 +1,14 @@
 import Accordion from 'react-bootstrap/Accordion';
+import { Helmet } from 'react-helmet';
 
 function Mentions() {
   return (
     
     <div className='accordion'>
+
+        <Helmet>
+            <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
         <div className='mentions'>
             <h1>Mentions légales</h1>
          </div>

@@ -20,3 +20,8 @@
 .folio{
     max-width: 90%;
 }
+
+.btn-hover:hover {
+    background-color: #3b81cc;
+  }
+  

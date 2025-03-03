@@ -1,57 +1,27 @@
-// src/components/AboutAndSkills.js
 import React from 'react';
 import '../css/home.css';
 import JohnDoeAbout from '../images/john-doe-about.jpg';
-
-// Composant de barre de progression
-const ProgressBar = ({ skill, percentage, color }) => {
-  return (
-    <div className="progress-container mb-3">
-      <label>{skill}</label>
-      <div className="progress">
-        <div
-          className="progress-bar"
-          role="progressbar"
-          style={{
-            width: `${percentage}%`,
-            backgroundColor: color,
-          }}
-          aria-valuenow={percentage}
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
-      </div>
-    </div>
-  );
-};
+import { ProgressBar } from 'react-bootstrap';  // Importer la ProgressBar de Bootstrap
 
 const AboutSkills = () => {
-  // Définir les pourcentages et les couleurs pour chaque compétence
+  // Définir les pourcentages pour chaque compétence
   const htmlSkill = 90;
   const cssSkill = 80;
   const jsSkill = 70;
   const phpSkill = 60;
   const reactSkill = 50;
 
-
-
-  const htmlColor = '#dc3545';
-  const cssColor = '#0dcaf0';
-  const jsColor = '#ffc107';
-  const phpColor = '#198754';
-  const reactColor = '#0d6efd';
-
   return (
     <div className="AboutAndSkills py-5">
       <div className="row">
         {/* Section À propos */}
         <div className="col-12 col-md-6">
-          <h3 className='borderBottom'>A propos</h3>
+          <h3 className="borderBottom">A propos</h3>
           <div className="photos mb-3">
             <img
               src={JohnDoeAbout}
               alt="john doe about"
-              style={{ maxWidth: '100%' }}
+              style={{ maxWidth: '100%', height: 'auto' }}
             />
           </div>
           <p>
@@ -69,18 +39,56 @@ const AboutSkills = () => {
             consecretur remoore venerenos nostum. ex celectus recencs moect aut lure
             enim placeat? Natus, neque at?
           </p>
-          
-          
         </div>
 
         {/* Section Compétences */}
         <div className="col-12 col-md-6">
-          <h3 className='borderBottom'>Mes Compétences</h3>
-          <ProgressBar skill="HTML 5 90%" percentage={htmlSkill} color={htmlColor} />
-          <ProgressBar skill="CSS 80%" percentage={cssSkill} color={cssColor} />
-          <ProgressBar skill="JavaScript 70%" percentage={jsSkill} color={jsColor} />
-          <ProgressBar skill="PHP 60%" percentage={phpSkill} color={phpColor} />
-          <ProgressBar skill="React 50%" percentage={reactSkill} color={reactColor} />
+          <h3 className="borderBottom">Mes Compétences</h3>
+          
+          {/* Compétence HTML */}
+          <div className="mb-3">
+            <div className="d-flex align-items-center">
+              <label className="me-2">HTML 5</label>
+              <span>{htmlSkill}%</span>
+            </div>
+            <ProgressBar now={htmlSkill} variant="danger" />
+          </div>
+
+          {/* Compétence CSS */}
+          <div className="mb-3">
+            <div className="d-flex align-items-center">
+              <label className="me-2">CSS 3</label>
+              <span>{cssSkill}%</span>
+            </div>
+            <ProgressBar now={cssSkill} variant="info" />
+          </div>
+
+          {/* Compétence JavaScript */}
+          <div className="mb-3">
+            <div className="d-flex align-items-center">
+              <label className="me-2">JavaScript</label>
+              <span>{jsSkill}%</span>
+            </div>
+            <ProgressBar now={jsSkill} variant="warning" />
+          </div>
+
+          {/* Compétence PHP */}
+          <div className="mb-3">
+            <div className="d-flex align-items-center">
+              <label className="me-2">PHP</label>
+              <span>{phpSkill}%</span>
+            </div>
+            <ProgressBar now={phpSkill} variant="success" />
+          </div>
+
+          {/* Compétence React */}
+          <div className="mb-3">
+            <div className="d-flex align-items-center">
+              <label className="me-2">React</label>
+              <span>{reactSkill}%</span>
+            </div>
+            <ProgressBar now={reactSkill} variant="primary" />
+          </div>
         </div>
       </div>
     </div>
