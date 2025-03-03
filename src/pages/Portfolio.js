@@ -15,7 +15,7 @@ function Portfolio() {
       title: 'Fresh Food',
       text: "Site de vente de produits frais en ligne",
       icon: (
-        <img src= {freshFood} alt='Fresh food'/>
+        <img className='img-fluid folio' src={freshFood} alt='Fresh food'/>
       ),
       footer: "Site réalisé avec PHP et MySQL",
     },
@@ -23,39 +23,39 @@ function Portfolio() {
       title: 'Restaurant Akira',
       text: "site de vente de produits frais en ligne",
       icon: (
-        <img src= {restaurantJaponais} alt='Restaurant japonais'/>
+        <img className='img-fluid folio' src={restaurantJaponais} alt='Restaurant japonais'/>
       ),
       footer: "Site réalisé avec WordPress",
     },
     {
       title: 'Espace bien-être',
-      text: "Espace e bien-être",
+      text: "Espace bien-être",
       icon: (
-        <img src= {espaceBienEtre} alt='Espace bien etre'/>
+        <img className='img-fluid folio' src={espaceBienEtre} alt='Espace bien être'/>
       ),
       footer: "Site réalisé par LARAVEL",
     },
     {
       title: 'SEO',
-      text: "Améliration du référencement d'un site e-commerce",
+      text: "Amélioration du référencement d'un site e-commerce",
       icon: (
-        <img src= {seo} alt='seo'/>
+        <img className='img-fluid folio' src={seo} alt='SEO'/>
       ),
       footer: "Utilisation des outils SEO",
     },
     {
       title: "Création d'une API",
-      text: "Création d'une API RESTFULL publique",
+      text: "Création d'une API RESTFUL publique",
       icon: (
-        <img src= {coder} alt='Création API'/>
+        <img className='img-fluid folio' src={coder} alt='Création API'/>
       ),
-      footer: "Découvrez l'importance d'une ",
+      footer: "Découvrez l'importance d'une API",
     },
     {
       title: "Maquette d'un site web",
-      text: "Création du prototyoe d'un site",
+      text: "Création du prototype d'un site",
       icon: (
-        <img src= {screens} alt='Maquette site web'/>
+        <img className='img-fluid folio' src={screens} alt='Maquette site web'/>
       ),
       footer: "Réalisé avec FIGMA",
     },
@@ -67,12 +67,12 @@ function Portfolio() {
         <img src={banner} alt="banner" className="img-fluid" />
       </div>
 
-      <div className='offre'>
+      <div className='offre text-center mt-4'>
         <h1>Portfolio</h1>
-        <p>Voici quelques-unes de mes réalisations. </p>
+        <p>Voici quelques-unes de mes réalisations.</p>
       </div>
 
-      <Row xs={1} md={3} className="g-4 mt-4">
+      <Row xs={1} sm={2} md={3} lg={3} xl={3} className="g-4 mt-4">
         {cardData.map((card, idx) => (
           <Col key={idx}>
             <Card 
@@ -84,7 +84,6 @@ function Portfolio() {
           </Col>
         ))}
       </Row>
-      
     </div>
   );
 }
