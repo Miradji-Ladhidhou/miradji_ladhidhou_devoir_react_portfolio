@@ -7,6 +7,7 @@ import './css/services.css';
 import './css/portfolio.css';
 import './css/Mentions.css';
 import './css/contact.css';
+import './css/modale.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -14,6 +15,7 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Mentions from './pages/Mentions';
+import Modale from './components/Modale';
 
 
 
@@ -28,6 +30,7 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Mentions" element={<Mentions />} />
+        <Route path="/Modale" element={<Modale />} />
       </Routes>
       <Footer />
     </div>

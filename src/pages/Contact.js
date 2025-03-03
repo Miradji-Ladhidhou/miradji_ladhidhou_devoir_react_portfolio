@@ -21,7 +21,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here (e.g., send to an API)
     alert('Form submitted!');
   };
 
@@ -97,7 +96,6 @@ const Contact = () => {
               />
             </Form.Group>
 
-            {/* Button centered at the bottom */}
             <div className="d-flex justify-content-center mt-4">
               <Button type="submit" variant="primary">
                 Envoyer
@@ -106,7 +104,6 @@ const Contact = () => {
           </Form>
         </Col>
 
-        {/* Contact Info Section */}
         <Col md={6}>
           <h2 className='form'>Mes Coordonnées</h2>
           <p>john Doe</p>

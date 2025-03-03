@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Card from '../components/Card';  // Import du composant de carte
+import Card from '../components/Card'; 
 import banner from '../images/banner.jpg';
 
 function Services() {
