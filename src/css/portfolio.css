@@ -1,0 +1,27 @@
+.cardsPortfolio{
+    height: 500px;
+
+}
+
+.cardsFooter{
+    height: 15%;
+    position:absolute;
+    bottom: 0%;
+    width: 100%;
+    left: 0%;
+    padding: 15px;
+
+}
+
+.shadow-sm{
+    margin-bottom: 20%;
+}
+
+.folio{
+    max-width: 90%;
+}
+
+.btn-hover:hover {
+    background-color: #3b81cc;
+  }
+  
