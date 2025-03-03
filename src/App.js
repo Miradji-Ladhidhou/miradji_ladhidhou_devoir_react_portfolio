@@ -6,6 +6,7 @@ import './css/home.css';
 import './css/services.css';
 import './css/portfolio.css';
 import './css/Mentions.css';
+import './css/contact.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
